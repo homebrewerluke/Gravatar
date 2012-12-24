@@ -1,7 +1,6 @@
-<?php namespace GetNinja\Gravatar\Tests;
+<?php
 
 use Mockery as m;
-use GetNinja\Gravatar\Gravatar;
 
 class GravatarTest extends PHPUnit_Framework_TestCase {
 	

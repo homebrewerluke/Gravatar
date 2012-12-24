@@ -21,7 +21,7 @@ class Gravatar {
 	 */
 	public function __construct(array $options = array())
 	{
-		$this->defaults = array_merge($this->settings, $options);
+		$this->settings = array_merge($this->settings, $options);
 	}
 	
 	/**

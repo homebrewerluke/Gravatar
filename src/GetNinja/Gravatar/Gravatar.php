@@ -44,6 +44,6 @@ class Gravatar {
 			'd' => $default ?: $this->settings['default'],
 		);
 		
-		return ($secure ? 'https://secure' : 'http://www').'.gravtar.com/avatar/'.$hash.'?'.http_build_query(array_filter($map));
+		return ($secure ? 'https://secure' : 'http://www').'.gravatar.com/avatar/'.$hash.'?'.http_build_query(array_filter($map));
 	}
 }

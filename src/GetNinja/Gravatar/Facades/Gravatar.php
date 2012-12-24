@@ -1,6 +1,6 @@
 <?php namespace GetNinja\Gravatar\Facades;
 
-use Illuminate\Support\Facades;
+use Illuminate\Support\Facades\Facade;
 
 class Gravatar extends Facade {
 

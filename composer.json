@@ -1,12 +1,16 @@
 {
     "name": "getninja/gravatar",
-    "description": "A flexible, gravatar API wrapper.",
+    "description": "A flexible, gravatar API wrapper for Laravel 4.",
     "authors": [
         {
 	        "name": "Luke Scalf",
 	        "email": "luke@monkeywrench.cc"
         }
     ],
+    "require": {
+	    "php": ">=5.3.0",
+	    "illuminate/support": "1.2.*",
+    },
     "require-dev": {
 	    "mockery/mockery": "0.7.2"
     },

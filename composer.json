@@ -1,0 +1,17 @@
+{
+    "name": "getninja/gravatar",
+    "description": "A flexible, gravatar API wrapper.",
+    "authors": [
+        {
+	        "name": "Luke Scalf",
+	        "email": "luke@monkeywrench.cc"
+        }
+    ],
+    "require-dev": {
+	    "mockery/mockery": "0.7.2"
+    },
+    "autoload": {
+	    "psr-0": {"GetNinja\\Gravatar": "src/"}
+    },
+    "minimum-stability": "dev"
+}

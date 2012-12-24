@@ -1,3 +1,3 @@
 # GetNinja Gravatar
 
-A flexible, gravatar API wrapper.
+A simple Gravatar Fetching Library.

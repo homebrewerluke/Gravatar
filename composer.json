@@ -1,15 +1,21 @@
 {
-    "name": "getninja/gravatar",
+    "name":        "getninja/gravatar",
+    "type":        "library",
     "description": "A flexible, gravatar API wrapper for Laravel 4.",
+    "homepage":    "https://github.com/GetNinja/Gravatar",
+    "keywords":    ["Gravatar", "Api Wrapper", "PSR-2"],
+    "license":     "Apache 2.0",
     "authors": [
         {
-	        "name": "Luke Scalf",
+	        "name":  "Luke Scalf",
 	        "email": "luke@monkeywrench.cc"
         }
     ],
     "require": {
-	    "php": ">=5.3.0",
-	    "illuminate/support": "1.2.*"
+	    "php":                ">=5.3.0",
+	    "illuminate/support": "1.1.*",
+        "ext-curl":           "*",
+        "kriswallsmith/buzz": ">=0.7"
     },
     "require-dev": {
 	    "mockery/mockery": "0.7.2"

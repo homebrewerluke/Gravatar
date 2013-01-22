@@ -47,7 +47,7 @@ class Gravatar
      * @param  Boolean $secure
      * @return String
      */
-    public function getGravatar($email, $size = null, $rating = null, $default = null)
+    public function getGravatar($email, $size = null, $rating = null, $default = null, $secure = null)
     {
         $hash = $this->getHash($email);
 
@@ -57,7 +57,11 @@ class Gravatar
             'd' => $default ?: $this->settings['default'],
         );
 
-        return ($this->settings['secure'] ? 'https://secure' : 'http://www').'.gravatar.com/avatar/'.$hash.'?'.http_build_query(array_filter($map));
+        if (null === $secure) {
+            $secure = $this->settings['secure'];
+        }
+
+        return ($secure ? 'https://secure' : 'http://www').'.gravatar.com/avatar/'.$hash.'?'.http_build_query(array_filter($map));
     }
 
     /**
@@ -73,7 +77,7 @@ class Gravatar
      * @param  String       $format
      * @return Array|String
      */
-    public function getProfile($email, $format = null)
+    public function getProfile($email, $format = null, $secure = null)
     {
         $hash = $this->getHash($email);
 
@@ -82,7 +86,11 @@ class Gravatar
             $extension = strtolower($format);
         }
 
-        $url = ($this->settings['secure'] ? 'https://secure' : 'http://www').'.gravatar.com/'.$hash.'.'.$extension;
+        if (null === $secure) {
+            $secure = $this->settings['secure'];
+        }
+
+        $url = ($secure ? 'https://secure' : 'http://www').'.gravatar.com/'.$hash.'.'.$extension;
 
         if ($format === 'qr' || $format === 'json') {
             return $url;

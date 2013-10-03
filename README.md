@@ -29,6 +29,6 @@ Gravatar is a Composer package named `getninja/gravatar`. To use it, simply add 
         }
     }
 
-After adding Gravatar to your `composer.json` file, simpleply user the class as normal.
+After adding Gravatar to your `composer.json` file, simply use the class as normal.
 
     $gravatar = new GetNinja\Gravatar\Gravatar();

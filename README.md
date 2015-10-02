@@ -1,7 +1,7 @@
 Gravatar
 =================
 
-[![Build Status](https://travis-ci.org/GetNinja/Gravatar.png?branch=master)](https://travis-ci.org/GetNinja/Gravatar)
+[![Build Status](https://travis-ci.org/dryhopped/Gravatar.png?branch=master)](https://travis-ci.org/dryhopped/Gravatar)
 
 Gravatar is a simple library for interacting with the Gravatar apis for fetching Avatar Images and Profile Data.
 
